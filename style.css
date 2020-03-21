@@ -1,0 +1,49 @@
+/*Possibile colore sfondo: #00ffc3*/
+*{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body{
+	background-color: #e8e2ae;
+}
+#titolo {
+	color: red;
+	text-align: center;
+	font-size: 60px;
+	}
+
+#primo {
+	background-color: #1ad2eb;
+	border-radius: 15px;
+}
+
+#sottotitolo {
+	color: rgb(95, 92, 84);
+	font-style: italic;
+}
+
+#paragrafo {
+	line-height: 1.4;
+	text-align: justify;
+	font-size: 17px;
+}
+
+img{
+	margin: 10px;
+	border-radius: 4px;
+}
+#secondo{
+	background-color: grey;
+	border-radius: 15px;
+}
+#sottotitolo2{
+	color: white;
+	font-style: italic;
+}
+#bottone{
+	background-color: blue;
+	color: white;
+	border: blue;
+	box-shadow: 0 4px 7px 0 black;
+	transform: translateY(3px);
+
+}

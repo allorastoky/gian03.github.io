@@ -8,14 +8,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script>
-		function logSubmit(event) {
-		log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
-		event.preventDefault();
+	<script type="text/javascript">
+		function boh() {
+			var name = document.getElementById("name").value
+    		var surname = document.getElementById("age").value
+    		var age = document.getElementById("city").value
+    		document.getElementById("fine").innerHTML = "Ciao "+ name + " " + surname "! Hai " + age + " anni!"
 	}
-		function scrivo(event){
-			document.write("Ciao", name, surname, "! Hai", age, "anni!!");
-		}
 	</script>
 </head>
 <body>
@@ -94,39 +93,27 @@
 		<br>
 	</div>
 	<h1 id="titolo"> Esercizio JavaScript </h1>
-	<form name="myForm" method="post">>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Nome</label>
-    <input class="form-control" name="name" placeholder="Inserisci il tuo nome...">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Cognome</label>
-    <input class="form-control" name="surname" placeholder="Inserisci il tuo cognome...">
+    <label for="name">Nome:</label>
+    <input class="form-control" type="name" id="name" placeholder="Inserisci il tuo nome...">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Età</label>
-    <input class="form-control" name="age" placeholder="Inserisci la tua età...">
+    <label for="surname">Cognome</label>
+    <input class="form-control" id="surname" type="surname" placeholder="Inserisci il tuo cognome...">
   </div>
-</form>
-<script type="text/javascript">
-	var name =  document.myForm.name.value;
-	var surname = document.myForms.surname.value;
-	var age= document.myForm.age.value;
-	function scrivo(event){
-			document.write("Ciao", name, surname, "! Hai", age, "anni!!");
-		}
-</script>
-<p>
-  <!--<button class="btn btn-primary" type="submit" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Submit
-  </button>-->
-  <tr><td colspan="2" class="btn btn-primary" align="right"><input type="button" value="Invia" onClick="document.write(name, surnane, age)"></td></tr>
-</p>
-<!--<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    <script> document.write("Ciao", name, surname, "! Hai", age, "anni!!") </script>
-  </div>
-</div>-->
-</div>
+  <div class="form-group">
+    <label for="age">Età : </label>
+    <input class="form-control" type="age" id="age" placeholder="Inserisci la tua età...">
+   </div>
+    <p id="stanco"></p>
+    <button type="submit" class="btn btn-primary" onclick="boh()">Submit</button>
+    <br>
+    	var name = document.getElementById("name").value
+    	var surname = document.getElementById("age").value
+    	var age = document.getElementById("city").value
+    <br>
+    <button style="background: blue" data-toggle="collapse" data-target="#demo" id="bottone">Prof, schiacci qui per favore</button>
+		<div id="demo" class="collapse"> <br>Spero funzioni, ma non penso di aver tutta questa fortuna. Ieri ci ho studiato molto e ho fatto più tentativi, anche basandomi su ciò che ha detto in classe, ma purtroppo non ho ottenuto molto e non capisco perchè. Infatti se guarda il codice sorgente su github (gian03) la funzione in JS c'è e credo non sia totalmente sbagliata. Mi dispiace di non averlo avuto per la data fissata inizialmente. Per settembre cercherò di portare il sito più ben fatto che posso, mi impegnerò al massimo. Il lato positivo è che almeno so fare un collapse :).
+		</div>
 </body>
 </html>

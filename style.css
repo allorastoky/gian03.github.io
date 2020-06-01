@@ -40,10 +40,10 @@ img{
 	font-style: italic;
 }
 #bottone{
-	background-color: blue;
+	background: blue;
 	color: white;
 	border: blue;
 	box-shadow: 0 4px 7px 0 black;
 	transform: translateY(3px);
-
+	height: 40px;
 }
